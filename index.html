@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Glow Up Routine ✨</title>
+    <!-- Menggunakan font Google agar tampilan tulisan lebih estetik -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        /* --- CSS UNTUK TEMA CUTE PASTEL --- */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fff5f5; /* Warna background pink super soft */
+            color: #5d4e4e; /* Warna teks cokelat gelap lembut, bukan hitam pekat */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 24px; /* Sudut melengkung yang cute */
+            box-shadow: 0 8px 24px rgba(255, 182, 193, 0.4); /* Efek bayangan pink lembut */
+        }
+
+        h1 {
+            font-family: 'Fredoka One', cursive; /* Font yang bulat dan lucu */
+            color: #ff85a2;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px #ffe3e8;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #ffa4b6;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* --- KOTAK TARGET HARIAN --- */
+        .target-box {
+            background-color: #fff0f3;
+            border: 2px dashed #ffb3c6;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 35px;
+        }
+
+        .target-box h3 {
+            font-family: 'Fredoka One', cursive;
+            color: #ff4d6d;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .target-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .target-item {
+            background: #ffffff;
+            padding: 12px 15px;
+            border-radius: 12px;
+            border-left: 5px solid #ff758f;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .target-item strong {
+            color: #ff4d6d;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* --- STYLING TABEL JADWAL --- */
+        .table-wrapper {
+            overflow-x: auto; /* Biar kalau di HP bisa di-scroll ke samping */
+            border-radius: 16px;
+            border: 2px solid #ffe3e8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            text-align: left;
+            min-width: 800px;
+        }
+
+        th {
+            background-color: #ffb3c6;
+            color: white;
+            font-family: 'Fredoka One', cursive;
+            padding: 15px;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        th:first-child {
+            width: 18%;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ffe3e8;
+            vertical-align: top;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Efek selang-seling warna baris tabel (Zebra striping) */
+        tr:nth-child(even) {
+            background-color: #fff9fa;
+        }
+
+        /* Efek saat baris tabel di-tunjuk dengan mouse */
+        tr:hover {
+            background-color: #ffedf0;
+            transition: 0.2s;
+        }
+
+        /* Styling tag hari dan fokusnya */
+        .day-title {
+            font-weight: 700;
+            color: #ff4d6d;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .day-focus {
+            font-size: 0.8rem;
+            background-color: #ffe3e8;
+            color: #ff758f;
+            padding: 3px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        /* Styling list di dalam tabel */
+        .routine-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .routine-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        /* Mengganti bullet point bawaan dengan emoji lucu */
+        .routine-list li::before {
+            content: "🌸";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-size: 0.85rem;
+        }
+
+        .routine-list li strong {
+            color: #ff758f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Glow Up Routine ✨</h1>
+        <p class="subtitle">1-Week Symmetry & Anti-Bloated Face Challenge</p>
+
+        <!-- Bagian Target Harian Tetap -->
+        <div class="target-box">
+            <h3>💖 Target Harian Tetap (Senin - Minggu)</h3>
+            <div class="target-grid">
+                <div class="target-item">
+                    <strong>💧 Hidrasi</strong>
+                    Minum 2–2,5 liter air putih setiap hari secara merata.
+                </div>
+                <div class="target-item">
+                    <strong>🛌 Postur Tidur</strong>
+                    Tidur telentang dengan bantal penopang leher yang baik.
+                </div>
+                <div class="target-item">
+                    <strong>👄 Kesadaran Mengunyah</strong>
+                    Bagi porsi kunyahan seimbang di sisi kanan dan kiri mulut.
+                </div>
+                <div class="target-item">
+                    <strong>🧂 Batasi Garam</strong>
+                    Hindari mi instan, fast food, dan camilan asin demi mencegah bloated.
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Tabel Utama -->
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hari / Fokus</th>
+                        <th>Jadwal Rutinitas Mingguan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- SENIN -->
+                    <tr>
+                        <td>
+                            <div class="day-title">Senin</div>
+                            <span class="day-focus">Otot Wajah</span>
+                        </td>
+                        <td>
+                            <ul class="routine-list">
+                                <li><strong>Pagi:</strong> Minum 1 gelas air hangat setelah bangun tidur untuk melancarkan sirkulasi.</li>
+                                <li><strong>Siang:</strong> Latihan mengunyah seimbang (sadari perpindahan makanan di dalam mulut).</li>
+                                <li><strong>Sore:</strong> 30 menit jalan cepat atau joging ringan (kardio dasar).</li>
+                                <li><strong>Malam:</strong> <em>Smile Exercises</em> di depan cermin. Tarik kedua sudut bibir sejajar ke atas, tahan 10 detik. Ulangi 5 kali.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- SELASA -->
+                    <tr>
+                        <td>
+                            <div class="day-title">Selasa</div>
+                            <span class="day-focus">Anti-Bloated</span>
+                        </td>
+                        <td>
+                            <ul class="routine-list">
+                                <li><strong>Pagi:</strong> Pijat wajah ringan dari dagu ke atas telinga secara melingkar selama 2 menit (drainase limfatik).</li>
+                                <li><strong>Siang:</strong> Konsumsi makanan tinggi kalium (seperti pisang atau alpukat) untuk membuang kelebihan natrium.</li>
+                                <li><strong>Sore:</strong> 20 menit senam aerobik atau skipping di rumah.</li>
+                                <li><strong>Malam:</strong> Latihan mengucapkan huruf vokal (A, I, U, E, O) secara lebar dan tegas selama 3 menit untuk otot rahang.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- RABU -->
+                    <tr>
+                        <td>
+                            <div class="day-title">Rabu</div>
+                            <span class="day-focus">Fokus Simetri</span>
+                        </td>
+                        <td>
+                            <ul class="routine-list">
+                                <li><strong>Pagi:</strong> Evaluasi postur saat duduk atau belajar. Jangan menopang dagu dengan satu tangan!</li>
+                                <li><strong>Siang:</strong> Minum air putih yang cukup sebelum dan sesudah makan.</li>
+                                <li><strong>Sore:</strong> Latihan beban ringan di rumah (squats, lunges, atau push-up dinding) selama 25 menit.</li>
+                                <li><strong>Malam:</strong> <em>Lip Press Exercise</em>. Rapatkan bibir kuat-kuat, lalu tersenyumlah selebar mungkin tanpa membuka bibir. Tahan 10 detik, ulangi 5 kali.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- KAMIS -->
+                    <tr>
+                        <td>
+                            <div class="day-title">Kamis</div>
+                            <span class="day-focus">Hidrasi Maksimal</span>
+                        </td>
+                        <td>
+                            <ul class="routine-list">
+                                <li><strong>Pagi:</strong> Lakukan stretching leher dan bahu untuk melancarkan aliran darah ke wajah.</li>
